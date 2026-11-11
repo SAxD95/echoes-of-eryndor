@@ -1,0 +1,114 @@
+[gd_scene format=3 uid="uid://bp04rx3y5tq2v"]
+
+[ext_resource type="PackedScene" uid="uid://sjh1bq82g3tc" path="res://game assts/kenney_modular-space-kit_1.0/Models/GLB format/corridor-wide-corner.glb" id="1_6iypd"]
+[ext_resource type="PackedScene" uid="uid://cmamvhbv6bbb" path="res://game assts/kenney_modular-space-kit_1.0/Models/GLB format/gate-door-window.glb" id="2_tereu"]
+[ext_resource type="PackedScene" uid="uid://ba0nppq7r1k5v" path="res://game assts/kenney_modular-space-kit_1.0/Models/GLB format/template-wall-corner.glb" id="2_wlxy5"]
+[ext_resource type="PackedScene" uid="uid://bli5xyu8ut7oh" path="res://game assts/kenney_modular-space-kit_1.0/Models/GLB format/room-corner.glb" id="3_cdqbm"]
+[ext_resource type="PackedScene" uid="uid://lnsaj33t8i2b" path="res://game assts/kenney_modular-space-kit_1.0/Models/GLB format/room-large-variation.glb" id="4_imku0"]
+[ext_resource type="PackedScene" uid="uid://dumfkv846lscm" path="res://game assts/kenney_modular-space-kit_1.0/Models/GLB format/room-small-variation.glb" id="5_wlxy5"]
+[ext_resource type="PackedScene" uid="uid://k4ko2c43mlrx" path="res://game assts/kenney_modular-space-kit_1.0/Models/GLB format/room-small.glb" id="6_3v7ru"]
+[ext_resource type="PackedScene" uid="uid://bn11g8l260a1y" path="res://game assts/kenney_modular-space-kit_1.0/Models/GLB format/room-wide-variation.glb" id="7_tcnuu"]
+[ext_resource type="PackedScene" uid="uid://c8fko47vpdwt1" path="res://game assts/kenney_modular-space-kit_1.0/Models/GLB format/room-wide.glb" id="8_tuemg"]
+[ext_resource type="PackedScene" uid="uid://com2j5faxdjdx" path="res://game assts/kenney_modular-space-kit_1.0/Models/GLB format/template-floor-detail-a.glb" id="9_i0g27"]
+[ext_resource type="PackedScene" uid="uid://bri2lktgmimet" path="res://game assts/kenney_modular-space-kit_1.0/Models/GLB format/template-wall-detail-a.glb" id="10_ealrb"]
+[ext_resource type="PackedScene" uid="uid://cuiungkmnegya" path="res://game assts/kenney_modular-space-kit_1.0/Models/GLB format/stairs.glb" id="12_3v7ru"]
+[ext_resource type="PackedScene" uid="uid://c0cru61iav202" path="res://game assts/kenney_modular-space-kit_1.0/Models/GLB format/template-floor-layer-raised.glb" id="13_tcnuu"]
+[ext_resource type="PackedScene" uid="uid://duv25umrade83" path="res://game assts/kenney_blocky-characters_20/Models/GLB format/character-d.glb" id="14_tuemg"]
+
+[sub_resource type="Environment" id="Environment_bx8n8"]
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_5iqjx"]
+
+[sub_resource type="Compositor" id="Compositor_jx8tp"]
+
+[node name="Node3D" type="Node3D" unique_id=153553606]
+
+[node name="corridor-wide-corner2" parent="." unique_id=1238524600 instance=ExtResource("1_6iypd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 87.278, -4.2790003, 9.184999)
+
+[node name="corridor-wide-corner2" parent="corridor-wide-corner2" unique_id=886288530 instance=ExtResource("1_6iypd")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0, -8)
+
+[node name="corridor-wide-corner4" parent="corridor-wide-corner2" unique_id=1809341954 instance=ExtResource("1_6iypd")]
+transform = Transform3D(1.3113416e-07, 0, -1, 0, 1, 0, 1, 0, 1.3113416e-07, -12, 0, 0)
+
+[node name="corridor-wide-corner3" parent="corridor-wide-corner2" unique_id=1004463732 instance=ExtResource("1_6iypd")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -12, 0, -8)
+
+[node name="template-wall-corner2" parent="corridor-wide-corner2" unique_id=1898029273 instance=ExtResource("2_wlxy5")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -4, 0, -11.999999)
+
+[node name="template-wall-corner2" parent="corridor-wide-corner2/template-wall-corner2" unique_id=1934988922 instance=ExtResource("2_wlxy5")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1.4305115e-06, 0, -4)
+
+[node name="template-floor-detail-a2" parent="corridor-wide-corner2" unique_id=1458941121 instance=ExtResource("9_i0g27")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 2)
+
+[node name="template-floor-detail-a4" parent="corridor-wide-corner2/template-floor-detail-a2" unique_id=1388337343 instance=ExtResource("9_i0g27")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0, -12)
+
+[node name="template-floor-detail-a3" parent="corridor-wide-corner2/template-floor-detail-a2" unique_id=638227888 instance=ExtResource("9_i0g27")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -8)
+
+[node name="template-floor-detail-a2" parent="corridor-wide-corner2/template-floor-detail-a2" unique_id=598358547 instance=ExtResource("9_i0g27")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+
+[node name="template-wall-detail-a2" parent="corridor-wide-corner2" unique_id=1360243403 instance=ExtResource("10_ealrb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 3.9999995)
+
+[node name="gate-door-window2" parent="." unique_id=1502345898 instance=ExtResource("2_tereu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 81.278, 0, -11.215)
+
+[node name="room-corner2" parent="." unique_id=1003770810 instance=ExtResource("3_cdqbm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.649881, 79.74485, 65.30264)
+
+[node name="room-large-variation2" parent="." unique_id=981921644 instance=ExtResource("4_imku0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.89, 79.745, 65.303)
+
+[node name="room-small-variation2" parent="." unique_id=1133070279 instance=ExtResource("5_wlxy5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 57.88, 79.745, 65.303)
+
+[node name="room-small3" parent="." unique_id=1156854990 instance=ExtResource("6_3v7ru")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 81.278, 0, -37.48)
+
+[node name="room-small3" parent="room-small3" unique_id=1308393315 instance=ExtResource("6_3v7ru")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -24)
+
+[node name="room-small4" parent="." unique_id=1549310037 instance=ExtResource("6_3v7ru")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 69.278, -0.19999999, -37.48)
+
+[node name="room-small4" parent="room-small4" unique_id=476975443 instance=ExtResource("6_3v7ru")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.19999999, 16.001)
+
+[node name="room-small5" parent="room-small4" unique_id=886288057 instance=ExtResource("6_3v7ru")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0.6000001, 16.001)
+
+[node name="room-small5" parent="." unique_id=320307083 instance=ExtResource("6_3v7ru")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 93.278, 0.19999999, -37.48)
+
+[node name="room-wide-variation2" parent="." unique_id=1158384812 instance=ExtResource("7_tcnuu")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 81.278, 0, -21.48)
+
+[node name="room-wide2" parent="." unique_id=303935261 instance=ExtResource("8_tuemg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 81.278, 0, -49.48)
+
+[node name="stairs2" parent="." unique_id=677083894 instance=ExtResource("12_3v7ru")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 81.278, -4.2790003, -8.815001)
+
+[node name="template-floor-layer-raised2" parent="." unique_id=98453080 instance=ExtResource("13_tcnuu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 81.2051, -4.2790003, 5.2130003)
+
+[node name="character-d2" parent="." unique_id=535331478 instance=ExtResource("14_tuemg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 81, 0, -50)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=586782024]
+environment = SubResource("Environment_bx8n8")
+camera_attributes = SubResource("CameraAttributesPractical_5iqjx")
+compositor = SubResource("Compositor_jx8tp")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="WorldEnvironment" unique_id=1341152504]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 80, 14, 36)
+
+[editable path="gate-door-window2"]
+[editable path="room-wide-variation2"]
+[editable path="character-d2"]

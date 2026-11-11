@@ -1,0 +1,17 @@
+[remap]
+
+importer="font_data_bmfont"
+type="FontFile"
+uid="uid://cu8mncp5dunxy"
+path="res://.godot/imported/pixel_ui_scifi_font.fnt-041353c53fbfd8276eea5036732a9b69.fontdata"
+
+[deps]
+
+source_file="res://addons/pixel_ui_scifi/font/pixel_ui_scifi_font.fnt"
+dest_files=["res://.godot/imported/pixel_ui_scifi_font.fnt-041353c53fbfd8276eea5036732a9b69.fontdata"]
+
+[params]
+
+fallbacks=[]
+compress=true
+scaling_mode=2

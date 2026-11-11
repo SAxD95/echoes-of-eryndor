@@ -1,0 +1,138 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://d0pa0uc3hj847"
+path="res://.godot/imported/Futuristic_Command_Center.glb-890b108164aeb55f8bf6b3f8951bdd31.scn"
+
+[deps]
+
+source_file="res://engine/Futuristic_Command_Center.glb"
+dest_files=["res://.godot/imported/Futuristic_Command_Center.glb-890b108164aeb55f8bf6b3f8951bdd31.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/root_script=null
+mesh_library/use_node_names_as_mesh_names=false
+array_mesh/deduplicate_surfaces=true
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+nodes/use_name_suffixes=true
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path=""
+materials/extract=0
+materials/extract_format=0
+materials/extract_path=""
+_subresources={
+"nodes": {
+"PATH:Futuristic Command Center/Center Ceiling": {
+"generate/physics": true
+},
+"PATH:Futuristic Command Center/Center Control": {
+"generate/physics": true
+},
+"PATH:Futuristic Command Center/Center Floor": {
+"generate/physics": true
+},
+"PATH:Futuristic Command Center/Consoles": {
+"generate/physics": true
+},
+"PATH:Futuristic Command Center/Door (2)": {
+"generate/physics": true
+},
+"PATH:Futuristic Command Center/Floor": {
+"generate/physics": true
+},
+"PATH:Futuristic Command Center/LED Light": {
+"generate/physics": true
+},
+"PATH:Futuristic Command Center/LED Light (10)": {
+"generate/physics": true
+},
+"PATH:Futuristic Command Center/LED Light (11)": {
+"generate/physics": true
+},
+"PATH:Futuristic Command Center/LED Light (12)": {
+"generate/physics": true
+},
+"PATH:Futuristic Command Center/LED TV": {
+"generate/physics": true
+},
+"PATH:Futuristic Command Center/LED TV 2": {
+"generate/physics": true
+},
+"PATH:Futuristic Command Center/LED TV 3": {
+"generate/physics": true
+},
+"PATH:Futuristic Command Center/LED TV 4": {
+"generate/physics": true
+},
+"PATH:Futuristic Command Center/Module (8)": {
+"generate/physics": true
+},
+"PATH:Futuristic Command Center/Module 2": {
+"generate/physics": true
+},
+"PATH:Futuristic Command Center/Module 2 (2)": {
+"generate/physics": true
+},
+"PATH:Futuristic Command Center/Roof": {
+"generate/physics": true
+},
+"PATH:Futuristic Command Center/Stage": {
+"generate/physics": true
+},
+"PATH:Futuristic Command Center/Stage (2)": {
+"generate/physics": true
+},
+"PATH:Futuristic Command Center/Stairs": {
+"generate/physics": true
+},
+"PATH:Futuristic Command Center/Stairs (2)": {
+"generate/physics": true
+},
+"PATH:Futuristic Command Center/Wall": {
+"generate/physics": true
+},
+"PATH:Futuristic Command Center/Wall (2)": {
+"generate/physics": true
+},
+"PATH:Futuristic Command Center/Wall (3)": {
+"generate/physics": true
+},
+"PATH:Futuristic Command Center/Wall (4)": {
+"generate/physics": true
+},
+"PATH:Futuristic Command Center/Wall (5)": {
+"generate/physics": true
+},
+"PATH:Futuristic Command Center/Wall (6)": {
+"generate/physics": true
+},
+"PATH:Futuristic Command Center/Wall (7)": {
+"generate/physics": true
+},
+"PATH:Futuristic Command Center/Wall (8)": {
+"generate/physics": true
+}
+}
+}
+gltf/naming_version=2
+gltf/embedded_image_handling=1
+gltf/texture_map_mode=1

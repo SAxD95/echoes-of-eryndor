@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://b5v4lqg0ex5e3"]
+
+[ext_resource type="Script" uid="uid://7esnevqv5tru" path="res://script/character_body_3d.gd" id="1_k8rrn"]
+[ext_resource type="PackedScene" uid="uid://duv25umrade83" path="res://game assts/kenney_blocky-characters_20/Models/GLB format/character-d.glb" id="2_d7vt2"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5h11f"]
+size = Vector3(0.8147583, 1.8446045, 0.012939453)
+
+[node name="CharacterBody3D" type="CharacterBody3D" unique_id=363426233]
+script = ExtResource("1_k8rrn")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1948715365]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.008594751, 0.9292042, 0.038262367)
+shape = SubResource("BoxShape3D_5h11f")
+
+[node name="Node3D" type="Node3D" parent="." unique_id=822544620]
+
+[node name="character-d2" parent="Node3D" unique_id=535331478 instance=ExtResource("2_d7vt2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.009729564, 0, 0.099084616)
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1923665028]
+transform = Transform3D(-1, 0, -1.509958e-07, 0, 1, 0, 1.509958e-07, 0, -1, 0.010064824, 2.4894712, 0.18894124)
+
+[editable path="Node3D/character-d2"]

@@ -1,0 +1,151 @@
+[gd_scene format=3 uid="uid://d3o4vhbmdncv5"]
+
+[ext_resource type="PackedScene" uid="uid://dmsalfyy4od02" path="res://game assts/kenney_modular-space-kit_1.0/Models/GLB format/template-floor.glb" id="1_x2fih"]
+[ext_resource type="PackedScene" uid="uid://com2j5faxdjdx" path="res://game assts/kenney_modular-space-kit_1.0/Models/GLB format/template-floor-detail-a.glb" id="2_0yfks"]
+[ext_resource type="PackedScene" uid="uid://f6s40yt2jsc" path="res://game assts/kenney_modular-space-kit_1.0/Models/GLB format/template-corner.glb" id="3_kjnkg"]
+[ext_resource type="PackedScene" uid="uid://d1d17tnvrolqe" path="res://game assts/kenney_modular-space-kit_1.0/Models/GLB format/gate-door.glb" id="5_aan5d"]
+[ext_resource type="Script" uid="uid://bgwkpaqc5u20r" path="res://script/gate_door.gd" id="6_1fh44"]
+[ext_resource type="PackedScene" uid="uid://c2mkd8gm72cmt" path="res://game assts/kenney_modular-space-kit_1.0/Models/GLB format/cables.glb" id="6_x2fih"]
+[ext_resource type="PackedScene" uid="uid://cnm75qph72kht" path="res://game assts/kenney_modular-space-kit_1.0/Models/GLB format/template-wall.glb" id="7_0yfks"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5h11f"]
+size = Vector3(3.046997, 3.1776123, 7.4971924)
+
+[node name="engine room" type="Node3D" unique_id=1677956687]
+
+[node name="template-floor-detail-a2" parent="." unique_id=1458941121 instance=ExtResource("2_0yfks")]
+transform = Transform3D(-4.371138e-08, 0, -1, 0, 1, 0, 1, 0, -4.371138e-08, 0.10070443, 0, 11.236229)
+
+[node name="template-floor2" parent="template-floor-detail-a2" unique_id=1256750080 instance=ExtResource("1_x2fih")]
+transform = Transform3D(-4.371138e-08, 0, 1, 0, 1, 0, -1, 0, -4.371138e-08, -3.999998, 0, 3.2782555e-07)
+
+[node name="template-floor-detail-a2" parent="template-floor-detail-a2" unique_id=1832541660 instance=ExtResource("2_0yfks")]
+transform = Transform3D(-4.371138e-08, 0, -1, 0, 1, 0, 1, 0, -4.371138e-08, -3.999999, 0, 3.9999995)
+
+[node name="template-floor-detail-a2" parent="template-floor-detail-a2/template-floor-detail-a2" unique_id=350096533 instance=ExtResource("2_0yfks")]
+transform = Transform3D(-4.371138e-08, 0, -1, 0, 1, 0, 1, 0, -4.371138e-08, -3.999999, 0, 3.9999995)
+
+[node name="template-floor-detail-a2" parent="template-floor-detail-a2/template-floor-detail-a2/template-floor-detail-a2" unique_id=1698897458 instance=ExtResource("2_0yfks")]
+transform = Transform3D(-4.371138e-08, 0, -1, 0, 1, 0, 1, 0, -4.371138e-08, -3.999999, 0, 3.9999995)
+
+[node name="template-corner2" parent="." unique_id=1723979368 instance=ExtResource("3_kjnkg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -3.899296, 0, 3.2362297)
+
+[node name="template-corner2" parent="template-corner2" unique_id=319634942 instance=ExtResource("3_kjnkg")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -4.7683716e-07, 0, -8)
+
+[node name="template-corner3" parent="template-corner2" unique_id=1716462294 instance=ExtResource("3_kjnkg")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -8, 0, -8)
+
+[node name="template-corner2" parent="template-corner2/template-corner3" unique_id=106469384 instance=ExtResource("3_kjnkg")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -4.7683716e-07, 0, -8)
+
+[node name="template-floor-detail-a2" parent="template-corner2" unique_id=1836863539 instance=ExtResource("2_0yfks")]
+transform = Transform3D(1.3113417e-07, -7.642742e-15, -1, -8.742278e-08, -1, -3.8213714e-15, -1, 8.742278e-08, -1.3113417e-07, -3.9999979, 8.099999, -8.000002)
+
+[node name="template-floor2" parent="template-corner2/template-floor-detail-a2" unique_id=1528186542 instance=ExtResource("1_x2fih")]
+transform = Transform3D(-4.371138e-08, 0, 1, 0, 1, 0, -1, 0, -4.371138e-08, -3.999998, 0, 3.2782555e-07)
+
+[node name="template-floor-detail-a2" parent="template-corner2/template-floor-detail-a2" unique_id=1651062121 instance=ExtResource("2_0yfks")]
+transform = Transform3D(-4.371138e-08, 0, -1, 0, 1, 0, 1, 0, -4.371138e-08, -3.999999, 0, 3.9999995)
+
+[node name="template-floor-detail-a2" parent="template-corner2/template-floor-detail-a2/template-floor-detail-a2" unique_id=569070159 instance=ExtResource("2_0yfks")]
+transform = Transform3D(-4.371138e-08, 0, -1, 0, 1, 0, 1, 0, -4.371138e-08, -3.999999, 0, 3.9999995)
+
+[node name="template-floor-detail-a2" parent="template-corner2/template-floor-detail-a2/template-floor-detail-a2/template-floor-detail-a2" unique_id=256916457 instance=ExtResource("2_0yfks")]
+transform = Transform3D(-4.371138e-08, 0, -1, 0, 1, 0, 1, 0, -4.371138e-08, -3.999999, 0, 3.9999995)
+
+[node name="template-corner4" parent="template-corner2" unique_id=1601709095 instance=ExtResource("3_kjnkg")]
+transform = Transform3D(-1, -7.642742e-15, -2.6226832e-07, -1.5285484e-14, -1, 8.742278e-08, -2.6226832e-07, 8.742278e-08, 1, -8, 8.099999, -2.3841858e-06)
+
+[node name="template-corner2" parent="template-corner2/template-corner4" unique_id=1307750026 instance=ExtResource("3_kjnkg")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -4.7683716e-07, 0, -8)
+
+[node name="template-corner3" parent="template-corner2/template-corner4" unique_id=1939180319 instance=ExtResource("3_kjnkg")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -8, 0, -8)
+
+[node name="template-corner2" parent="template-corner2/template-corner4/template-corner3" unique_id=2116708967 instance=ExtResource("3_kjnkg")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -4.7683716e-07, 0, -8)
+
+[node name="gate-door2" parent="." unique_id=605238256 instance=ExtResource("5_aan5d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1037972, 0, 13.116)
+script = ExtResource("6_1fh44")
+
+[node name="gate-door" parent="gate-door2" index="0" unique_id=790871389]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.16080856)
+
+[node name="TriggerZone" type="Area3D" parent="gate-door2" unique_id=1240457141]
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="gate-door2/TriggerZone" unique_id=638348813]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.07818604, 2.2306223, 0.13446045)
+shape = SubResource("BoxShape3D_5h11f")
+
+[node name="gate-door3" parent="." unique_id=1585643775 instance=ExtResource("5_aan5d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.13087144, 0, 1.026)
+script = ExtResource("6_1fh44")
+
+[node name="gate-door" parent="gate-door3" index="0" unique_id=790871389]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.16080856)
+
+[node name="AnimationPlayer" parent="gate-door3" index="1" unique_id=1275330291]
+root_node = NodePath("../../gate-door3")
+
+[node name="TriggerZone" type="Area3D" parent="gate-door3" unique_id=1812064578]
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="gate-door3/TriggerZone" unique_id=1664831271]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.07818604, 2.2306223, 0.13446045)
+shape = SubResource("BoxShape3D_5h11f")
+
+[node name="gate-door4" parent="." unique_id=286825156 instance=ExtResource("5_aan5d")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -5.722, 0, 7.118)
+visible = false
+script = ExtResource("6_1fh44")
+
+[node name="gate-door" parent="gate-door4" index="0" unique_id=790871389]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.16080856)
+
+[node name="AnimationPlayer" parent="gate-door4" index="1" unique_id=1275330291]
+root_node = NodePath("../../gate-door4")
+
+[node name="TriggerZone" type="Area3D" parent="gate-door4" unique_id=1612243927]
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="gate-door4/TriggerZone" unique_id=1841080444]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.07818604, 2.2306223, 0.13446045)
+shape = SubResource("BoxShape3D_5h11f")
+
+[node name="gate-door5" parent="." unique_id=233874944 instance=ExtResource("5_aan5d")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 6.33905, 0, 7.236229)
+visible = false
+script = ExtResource("6_1fh44")
+
+[node name="gate-door" parent="gate-door5" index="0" unique_id=790871389]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.16080856)
+
+[node name="AnimationPlayer" parent="gate-door5" index="1" unique_id=1275330291]
+root_node = NodePath("../../gate-door5")
+
+[node name="TriggerZone" type="Area3D" parent="gate-door5" unique_id=1814541151]
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="gate-door5/TriggerZone" unique_id=1230834741]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.07818604, 2.2306223, 0.13446045)
+shape = SubResource("BoxShape3D_5h11f")
+
+[node name="cables2" parent="." unique_id=336044076 instance=ExtResource("6_x2fih")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.327996, 2.861023e-06, 3.5629153)
+
+[node name="template-wall2" parent="." unique_id=709529739 instance=ExtResource("7_0yfks")]
+transform = Transform3D(-1, 8.742278e-08, 0, -8.742278e-08, -1, 0, 0, 0, 1, 0.100702286, 8.099998, 13.236231)
+
+[node name="template-wall2" parent="template-wall2" unique_id=1024906746 instance=ExtResource("7_0yfks")]
+transform = Transform3D(-0.9999932, 0.0036951252, 8.742277e-08, 0.0036951252, 0.9999932, -7.642741e-15, -8.742219e-08, 3.230305e-10, -1, 1.2397766e-05, 0.0073890686, -11.999998)
+
+[node name="template-wall2" parent="template-wall2/template-wall2" unique_id=293453633 instance=ExtResource("7_0yfks")]
+transform = Transform3D(-4.338748e-08, 0.0036950381, -0.9999932, 8.770524e-08, 0.9999932, 0.0036950381, 1.0000001, -8.731149e-08, -4.3710777e-08, -5.9999723, 0.014780998, -5.9999967)
+
+[node name="template-wall2" parent="template-wall2/template-wall2/template-wall2" unique_id=425262498 instance=ExtResource("7_0yfks")]
+transform = Transform3D(-1.0000001, 1.7492653e-07, 8.77462e-08, 1.7548238e-07, 0.9999932, 0.0036949508, -8.709887e-08, 0.0036949508, -0.9999932, -3.8146973e-06, -9.536743e-07, -11.999999)
+
+[editable path="gate-door2"]
+[editable path="gate-door3"]
+[editable path="gate-door4"]
+[editable path="gate-door5"]
