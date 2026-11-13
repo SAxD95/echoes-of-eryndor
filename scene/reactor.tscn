@@ -222,23 +222,65 @@ transform = Transform3D(1.9678878, 0, 0, 0, 2.028337, 0, 0, 0, 1.9678878, -3.410
 [node name="SM_Ceiling_Light2" parent="." unique_id=1306921317 instance=ExtResource("15_nbid5")]
 transform = Transform3D(3.3478997, 0, 0, 0, 0.99999994, 0, 1.4210855e-14, 0, 1, 0.06688714, 3.849587, 7.2349358)
 
+[node name="SpotLight3D" type="SpotLight3D" parent="SM_Ceiling_Light2" unique_id=1830736137]
+transform = Transform3D(0.29869473, 1.164874e-09, 1.1648666e-09, -3.8998573e-09, -4.371139e-08, 1.0000001, 3.899877e-09, -1, -4.3711385e-08, 0.15597108, -0.5091028, -0.06030655)
+light_energy = 2.6
+spot_range = 10.0
+spot_angle = 70.0
+
 [node name="SM_Ceiling_Light4" parent="." unique_id=1563585679 instance=ExtResource("15_nbid5")]
 transform = Transform3D(3.3478997, 0, 0, 0, 0.99999994, 0, 1.4210855e-14, 0, 1, 0.06688714, 3.849587, 1.4003811)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="SM_Ceiling_Light4" unique_id=656205877]
+transform = Transform3D(0.29869473, 1.164874e-09, 1.1648666e-09, -3.8998573e-09, -4.371139e-08, 1.0000001, 3.899877e-09, -1, -4.3711385e-08, 0.15597108, -0.5091028, -0.06030655)
+light_energy = 2.6
+spot_range = 10.0
+spot_angle = 70.0
 
 [node name="SM_Ceiling_Light8" parent="." unique_id=1178019753 instance=ExtResource("15_nbid5")]
 transform = Transform3D(-1.4634134e-07, 0, 1, 0, 0.99999994, 0, -3.3478997, 0, -4.371139e-08, -3.3284888, 3.849587, -7.029091)
 
+[node name="SpotLight3D" type="SpotLight3D" parent="SM_Ceiling_Light8" unique_id=330323076]
+transform = Transform3D(0.29869473, 1.164874e-09, 1.1648666e-09, -3.8998573e-09, -4.371139e-08, 1.0000001, 3.899877e-09, -1, -4.3711385e-08, 0.15597108, -0.5091028, -0.06030655)
+light_energy = 2.6
+spot_range = 10.0
+spot_angle = 70.0
+
 [node name="SM_Ceiling_Light3" parent="." unique_id=1098360509 instance=ExtResource("15_nbid5")]
 transform = Transform3D(3.3478997, 0, 0, 0, 0.99999994, 0, 1.4210855e-14, 0, 1, 0.06688714, 3.849587, 13.213764)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="SM_Ceiling_Light3" unique_id=1496180235]
+transform = Transform3D(0.29869473, 1.164874e-09, 1.1648666e-09, -3.8998573e-09, -4.371139e-08, 1.0000001, 3.899877e-09, -1, -4.3711385e-08, 0.15597108, -0.5091028, -0.06030655)
+light_energy = 2.6
+spot_range = 10.0
+spot_angle = 70.0
 
 [node name="SM_Ceiling_Light5" parent="." unique_id=482536537 instance=ExtResource("15_nbid5")]
 transform = Transform3D(3.3478997, 0, 0, 0, 0.99999994, 0, 1.4210855e-14, 0, 1, -6.8037453, 3.849587, 7.2349358)
 
+[node name="SpotLight3D" type="SpotLight3D" parent="SM_Ceiling_Light5" unique_id=110002892]
+transform = Transform3D(0.29869473, 1.164874e-09, 1.1648666e-09, -3.8998573e-09, -4.371139e-08, 1.0000001, 3.899877e-09, -1, -4.3711385e-08, 0.15597108, -0.5091028, -0.06030655)
+light_energy = 2.6
+spot_range = 10.0
+spot_angle = 70.0
+
 [node name="SM_Ceiling_Light6" parent="." unique_id=162474339 instance=ExtResource("15_nbid5")]
 transform = Transform3D(3.3478997, 0, 0, 0, 0.99999994, 0, 1.4210855e-14, 0, 1, -6.8037453, 3.849587, 1.4003811)
 
+[node name="SpotLight3D" type="SpotLight3D" parent="SM_Ceiling_Light6" unique_id=1154652851]
+transform = Transform3D(0.29869473, 1.164874e-09, 1.1648666e-09, -3.8998573e-09, -4.371139e-08, 1.0000001, 3.899877e-09, -1, -4.3711385e-08, 0.15597108, -0.5091028, -0.06030655)
+light_energy = 2.6
+spot_range = 10.0
+spot_angle = 70.0
+
 [node name="SM_Ceiling_Light7" parent="." unique_id=1197316870 instance=ExtResource("15_nbid5")]
 transform = Transform3D(3.3478997, 0, 0, 0, 0.99999994, 0, 1.4210855e-14, 0, 1, -6.8037453, 3.849587, 13.213764)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="SM_Ceiling_Light7" unique_id=775849991]
+transform = Transform3D(0.29869473, 1.164874e-09, 1.1648666e-09, -3.8998573e-09, -4.371139e-08, 1.0000001, 3.899877e-09, -1, -4.3711385e-08, 0.15597108, -0.5091028, -0.06030655)
+light_energy = 2.6
+spot_range = 10.0
+spot_angle = 70.0
 
 [node name="SM_Power_Conduit2" parent="." unique_id=1908306938 instance=ExtResource("16_1bu0v")]
 transform = Transform3D(1.77, 0, 0, 0, 1.77, 0, 0, 0, 1.77, -1.371212, -4.289646, 15.443098)

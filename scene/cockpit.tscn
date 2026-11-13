@@ -104,8 +104,20 @@ transform = Transform3D(-2.3125997, 0, -2.0217388e-07, 0, 2.2657704, 0, 2.021738
 [node name="SM_Ceiling_Light2" parent="." unique_id=1306921317 instance=ExtResource("8_f5ojm")]
 transform = Transform3D(3.3478997, 0, 0, 0, 0.99999994, 0, 1.4210855e-14, 0, 1, 0.06688714, 8.174904, 5.037999)
 
+[node name="SpotLight3D" type="SpotLight3D" parent="SM_Ceiling_Light2" unique_id=1273667332]
+transform = Transform3D(0.29869473, 1.164874e-09, 1.1648666e-09, -3.8998573e-09, -4.371139e-08, 1.0000001, 3.899877e-09, -1, -4.3711385e-08, 0.15597108, -0.5091028, -0.06030655)
+light_energy = 2.6
+spot_range = 10.0
+spot_angle = 70.0
+
 [node name="SM_Ceiling_Light3" parent="." unique_id=1078584093 instance=ExtResource("8_f5ojm")]
 transform = Transform3D(3.3478997, 0, 0, 0, 0.99999994, 0, 1.4210855e-14, 0, 1, 0.06688714, 8.174904, 9.439451)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="SM_Ceiling_Light3" unique_id=504511722]
+transform = Transform3D(0.29869473, 1.164874e-09, 1.1648666e-09, -3.8998573e-09, -4.371139e-08, 1.0000001, 3.899877e-09, -1, -4.3711385e-08, 0.15597108, -0.5091028, -0.06030655)
+light_energy = 2.6
+spot_range = 10.0
+spot_angle = 70.0
 
 [node name="SM_Eng_Control_Panel2" parent="." unique_id=437742586 instance=ExtResource("9_y1bpg")]
 transform = Transform3D(-7.736916e-08, 0, 1.77, 0, 1.77, 0, -1.77, 0, -7.736916e-08, -4.4633846, -4.7683716e-07, 6.7123256)

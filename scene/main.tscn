@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://cru53enig026p"]
 
+[ext_resource type="Texture2D" uid="uid://vhrealusfbu" path="res://starmap_2020_4k.exr" id="1_v2gmf"]
 [ext_resource type="PackedScene" uid="uid://b76kbbvcmhblu" path="res://scene/airlock.tscn" id="4_of57s"]
 [ext_resource type="Script" uid="uid://31v7kqln840u" path="res://script/InteractableProp.gd" id="6_hybxs"]
 [ext_resource type="PackedScene" uid="uid://bt2ftprck7x2i" path="res://scene/control_center.tscn" id="7_of57s"]
@@ -15,9 +16,17 @@
 [ext_resource type="PackedScene" uid="uid://b3633raka3l3i" path="res://scene/storage.tscn" id="12_wscrc"]
 [ext_resource type="PackedScene" uid="uid://b3x2dbr2mgotk" path="res://game assts/Modular SciFi MegaKit[Standard]/FBX/Props/Prop_Cable_1.fbx" id="23_p8adh"]
 
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_v2gmf"]
+panorama = ExtResource("1_v2gmf")
+
+[sub_resource type="Sky" id="Sky_hybxs"]
+sky_material = SubResource("PanoramaSkyMaterial_v2gmf")
+
 [sub_resource type="Environment" id="Environment_of57s"]
 background_mode = 2
 background_color = Color(0.20673716, 0.00019646973, 0.6168157, 1)
+sky = SubResource("Sky_hybxs")
+sky_rotation = Vector3(0, -1.4276793, 0)
 ambient_light_source = 2
 ambient_light_color = Color(0.23552382, 0.07095831, 0.51590395, 1)
 ambient_light_energy = 0.3
@@ -28,7 +37,6 @@ glow_enabled = true
 glow_levels/1 = 0.17
 glow_intensity = 0.9
 glow_bloom = 0.15
-fog_enabled = true
 
 [sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_b5f6u"]
 
@@ -45,6 +53,9 @@ shader_parameter/vignette = 0.0
 
 [node name="Node3D" type="Node3D" unique_id=153553606]
 
+[node name="CharacterBody3D" parent="." unique_id=363426233 instance=ExtResource("9_smf0o")]
+transform = Transform3D(1.3113416e-07, 0, -1, 0, 1, 0, 1, 0, 1.3113416e-07, 92.513336, 0.06614113, -37.214737)
+
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1341152504]
 transform = Transform3D(1, 0, 0, 0, 1.3113416e-07, 1, 0, -1, 1.3113416e-07, 107.69252, 13.205059, -27.999416)
 light_color = Color(1, 0.972549, 0.90588236, 1)
@@ -60,8 +71,9 @@ compositor = SubResource("Compositor_tqoya")
 [node name="Reactor" parent="." unique_id=1515105779 instance=ExtResource("8_jcbur")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 84.647995, 0.19953442, -0.8649988)
 
-[node name="CharacterBody3D" parent="." unique_id=363426233 instance=ExtResource("9_smf0o")]
-transform = Transform3D(1.3113416e-07, 0, -1, 0, 1, 0, 1, 0, 1.3113416e-07, 79.96568, 0.06614113, -13.802475)
+[node name="SM_Eng_Control_Panel3" parent="Reactor" index="51" unique_id=1128251704]
+script = ExtResource("6_hybxs")
+prop_type = 5
 
 [node name="airlock" parent="." unique_id=1584216327 instance=ExtResource("4_of57s")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 62.041763, 0, -21.37975)
@@ -83,11 +95,22 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 81.17729, 0, -44.717068)
 [node name="gate-door2" parent="corridor" index="2" unique_id=605238256]
 is_locked = true
 
+[node name="SpotLight3D" type="SpotLight3D" parent="corridor/SM_Ceiling_Light2" parent_id_path=PackedInt32Array(1523326413, 1306921317) index="1" unique_id=2095062904]
+transform = Transform3D(0.29869473, 1.164874e-09, 1.1648666e-09, -3.8998573e-09, -4.371139e-08, 1.0000001, 3.899877e-09, -1, -4.3711385e-08, 0.15597108, -0.5091028, -0.06030655)
+light_energy = 2.6
+spot_range = 10.0
+spot_angle = 70.0
+
+[node name="SpotLight3D" type="SpotLight3D" parent="corridor/SM_Ceiling_Light3" parent_id_path=PackedInt32Array(1523326413, 2102986959) index="1" unique_id=193855469]
+transform = Transform3D(0.29869473, 1.164874e-09, 1.1648666e-09, -3.8998573e-09, -4.371139e-08, 1.0000001, 3.899877e-09, -1, -4.3711385e-08, 0.15597108, -0.5091028, -0.06030655)
+light_energy = 2.6
+spot_range = 10.0
+spot_angle = 70.0
+
 [node name="long corridor" parent="." unique_id=247918901 instance=ExtResource("8_b5f6u")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 81.22844, -3.3012695, -22.180662)
 
-[node name="Untitled" parent="long corridor" index="25" unique_id=1426005834 node_paths=PackedStringArray("target_door")]
-prop_type = 4
+[node name="Untitled" parent="long corridor" index="26" unique_id=1426005834 node_paths=PackedStringArray("target_door")]
 target_door = NodePath("../../Reactor/gate-door-window2")
 
 [node name="Prop_Cable_1" parent="." unique_id=1409829783 instance=ExtResource("23_p8adh")]

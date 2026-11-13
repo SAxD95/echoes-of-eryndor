@@ -13,6 +13,7 @@ enum PropType {
 @export var target_door: Node3D
 @export var audio_player: AudioStreamPlayer3D
 @export var core_light: OmniLight3D
+@export var status_screen: MeshInstance3D
 
 const AMBER_COLOR := Vector3(2.2, 1.15, 0.2)
 const GREEN_COLOR := Vector3(0.2, 2.4, 0.5)
@@ -49,6 +50,11 @@ func _ready() -> void:
 
 	for child in find_children("*", "MeshInstance3D", true, false):
 		_meshes.append(child)
+
+	# Force the entire linked screen mesh to start pure unshaded RED on boot
+	if status_screen:
+		print("STATUS SCREEN LINKED TO: ", status_screen.get_path())
+		_set_screen_color(Color(1.0, 0.05, 0.05))
 
 
 func set_highlighted(active: bool) -> void:
@@ -110,6 +116,7 @@ func interact() -> void:
 		PropType.PRESSURE_VALVE:
 			mark_activated()
 			_play_prop_animation()
+			_set_screen_color(Color(0.1, 0.75, 1.0))
 			GameState.valve_vented = true
 			_unlock_door(target_door)
 			GameState.status_message_updated.emit("PRESSURE EQUALIZED: Reactor Bay Airlock unsealed.")
@@ -138,6 +145,15 @@ func _play_prop_animation() -> void:
 		anim_player.play("EXPORT_layout_a_valve_handwheelAction")
 	elif anim_player.get_animation_list().size() > 0:
 		anim_player.play(anim_player.get_animation_list()[0])
+
+
+func _set_screen_color(albedo: Color) -> void:
+	if not status_screen:
+		return
+	var mat := StandardMaterial3D.new()
+	mat.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
+	mat.albedo_color = albedo
+	status_screen.material_override = mat
 
 
 func _unlock_door(door: Node3D) -> void:

@@ -324,14 +324,38 @@ transform = Transform3D(-1.77, 0, -1.5473832e-07, 0, 1.77, 0, 1.5473832e-07, 0, 
 [node name="SM_Ceiling_Light2" parent="." unique_id=1306921317 instance=ExtResource("16_xwgsa")]
 transform = Transform3D(3.3478997, 0, 0, 0, 0.99999994, 0, 1.4210855e-14, 0, 1, 4.002779, 8.174904, -2.262104)
 
+[node name="SpotLight3D" type="SpotLight3D" parent="SM_Ceiling_Light2" unique_id=1541274394]
+transform = Transform3D(0.29869473, 1.164874e-09, 1.1648666e-09, -3.8998573e-09, -4.371139e-08, 1.0000001, 3.899877e-09, -1, -4.3711385e-08, 0.15597108, -0.5091028, -0.06030655)
+light_energy = 2.6
+spot_range = 10.0
+spot_angle = 70.0
+
 [node name="SM_Ceiling_Light3" parent="." unique_id=159281100 instance=ExtResource("16_xwgsa")]
 transform = Transform3D(3.3478997, 0, 0, 0, 0.99999994, 0, 1.4210855e-14, 0, 1, 4.002779, 8.174904, 2.139348)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="SM_Ceiling_Light3" unique_id=1812211346]
+transform = Transform3D(0.29869473, 1.164874e-09, 1.1648666e-09, -3.8998573e-09, -4.371139e-08, 1.0000001, 3.899877e-09, -1, -4.3711385e-08, 0.15597108, -0.5091028, -0.06030655)
+light_energy = 2.6
+spot_range = 10.0
+spot_angle = 70.0
 
 [node name="SM_Ceiling_Light4" parent="." unique_id=1683541382 instance=ExtResource("16_xwgsa")]
 transform = Transform3D(3.3478997, 0, 0, 0, 0.99999994, 0, 1.4210855e-14, 0, 1, 12.980654, 8.174904, -2.262104)
 
+[node name="SpotLight3D" type="SpotLight3D" parent="SM_Ceiling_Light4" unique_id=1177958077]
+transform = Transform3D(0.29869473, 1.164874e-09, 1.1648666e-09, -3.8998573e-09, -4.371139e-08, 1.0000001, 3.899877e-09, -1, -4.3711385e-08, 0.15597108, -0.5091028, -0.06030655)
+light_energy = 2.6
+spot_range = 10.0
+spot_angle = 70.0
+
 [node name="SM_Ceiling_Light5" parent="." unique_id=1758043894 instance=ExtResource("16_xwgsa")]
 transform = Transform3D(3.3478997, 0, 0, 0, 0.99999994, 0, 1.4210855e-14, 0, 1, 12.980654, 8.174904, 2.139348)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="SM_Ceiling_Light5" unique_id=1178175533]
+transform = Transform3D(0.29869473, 1.164874e-09, 1.1648666e-09, -3.8998573e-09, -4.371139e-08, 1.0000001, 3.899877e-09, -1, -4.3711385e-08, 0.15597108, -0.5091028, -0.06030655)
+light_energy = 2.6
+spot_range = 10.0
+spot_angle = 70.0
 
 [node name="SM_Floor_LightStrip2" parent="." unique_id=787399592 instance=ExtResource("17_7g4bn")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 9.896454, 0.04, 4.8870435)

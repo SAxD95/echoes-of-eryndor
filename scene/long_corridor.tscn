@@ -14,10 +14,18 @@
 [ext_resource type="PackedScene" uid="uid://cd08barftlxmh" path="res://game assts/LowPolySciFiStation/SM_Ceiling_Light.glb" id="12_13dkd"]
 [ext_resource type="PackedScene" uid="uid://bxeninut3epa1" path="res://game assts/LowPolySciFiStation/SM_Landing_Light.glb" id="13_s61vy"]
 [ext_resource type="PackedScene" uid="uid://c8avbvclvx1ey" path="res://game assts/LowPolySciFiStation/Untitled.glb" id="14_dhcfo"]
+[ext_resource type="PackedScene" uid="uid://dv2t841nb1vlf" path="res://game assts/LowPolySciFiStation/SM_Datapad.glb" id="14_qvpog"]
 [ext_resource type="Script" uid="uid://31v7kqln840u" path="res://script/InteractableProp.gd" id="15_njdyd"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_7fn3u"]
 size = Vector3(3.046997, 3.1776123, 7.4971924)
+
+[sub_resource type="QuadMesh" id="QuadMesh_7fn3u"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jocgk"]
+albedo_color = Color(0.59607846, 0, 0.007843138, 1)
+emission_enabled = true
+emission = Color(0.99452466, 0, 0.19711131, 1)
 
 [node name="long corridor" type="Node3D" unique_id=247918901]
 
@@ -214,15 +222,43 @@ transform = Transform3D(-1.4634134e-07, 0, 0.99999994, 0, 0.99999994, 0, -3.3478
 [node name="SM_Ceiling_Light3" parent="." unique_id=1814368868 instance=ExtResource("12_13dkd")]
 transform = Transform3D(-1.4634134e-07, 0, 0.99999994, 0, 0.99999994, 0, -3.3478997, 0, -4.3711385e-08, 6.521872, 11.431906, -0.05454254)
 
+[node name="SpotLight3D" type="SpotLight3D" parent="SM_Ceiling_Light3" unique_id=719274834]
+transform = Transform3D(0.29869476, 1.1648726e-09, 1.1648671e-09, -3.899858e-09, -4.3711392e-08, 1.0000001, 3.8998778e-09, -1.0000001, -4.3711392e-08, 0, -0.12935162, 0.023334503)
+light_energy = 2.6
+spot_range = 10.0
+spot_angle = 70.0
+
 [node name="SM_Ceiling_Light4" parent="." unique_id=994622785 instance=ExtResource("12_13dkd")]
 transform = Transform3D(-1.4634134e-07, 0, 0.99999994, 0, 0.99999994, 0, -3.3478997, 0, -4.3711385e-08, 0.643208, 11.431906, -0.05454254)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="SM_Ceiling_Light4" unique_id=1752937778]
+transform = Transform3D(0.29869476, 1.1648735e-09, 1.164867e-09, -3.8998578e-09, -4.3711392e-08, 1.0000001, 3.8998813e-09, -1.0000001, -4.3711392e-08, 0, -0.12935162, 0.023334503)
+light_energy = 2.6
+spot_range = 10.0
+spot_angle = 70.0
 
 [node name="SM_Landing_Light2" parent="." unique_id=1411784551 instance=ExtResource("13_s61vy")]
 transform = Transform3D(1.77, 0, 0, 0, 1.77, 0, 0, 0, 1.77, 8.886665, 3.301268, -3.456563)
 
-[node name="Untitled" parent="." unique_id=1426005834 instance=ExtResource("14_dhcfo")]
+[node name="SpotLight3D" type="SpotLight3D" parent="SM_Landing_Light2" unique_id=1750180782]
+transform = Transform3D(0.56497175, 7.3764954e-09, 7.3764586e-09, -7.376458e-09, -2.46957e-08, 0.56497175, 7.376496e-09, -0.56497175, -2.46957e-08, -7.7329807, 4.2535143, 1.9457529)
+light_energy = 2.6
+spot_range = 10.0
+spot_angle = 70.0
+
+[node name="SM_Datapad2" parent="." unique_id=219844439 instance=ExtResource("14_qvpog")]
+transform = Transform3D(-5.3290705e-14, -4.8960025e-08, 3.749908, -3.749908, -4.896028e-08, 3.907985e-14, 4.8960274e-08, -3.749908, -4.8960022e-08, 6.706477, 6.4677987, 5.3329144)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="SM_Datapad2" unique_id=2027273962]
+transform = Transform3D(0.16143775, 9.540136e-09, 4.3711402e-08, 7.056669e-09, -9.540135e-09, -1, -7.056668e-09, 0.21825288, -4.3711385e-08, 0, 0.047754765, 0)
+mesh = SubResource("QuadMesh_7fn3u")
+surface_material_override/0 = SubResource("StandardMaterial3D_jocgk")
+
+[node name="Untitled" parent="." unique_id=1426005834 node_paths=PackedStringArray("status_screen") instance=ExtResource("14_dhcfo")]
 transform = Transform3D(-1.77, 0, -1.5473832e-07, 0, 1.77, 0, 1.5473832e-07, 0, -1.77, 6.383871, 3.301269, 4.275429)
 script = ExtResource("15_njdyd")
+prop_type = 4
+status_screen = NodePath("../SM_Datapad2/MeshInstance3D")
 
 [editable path="gate-door5"]
 [editable path="gate-door6"]
