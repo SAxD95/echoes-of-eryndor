@@ -7,6 +7,8 @@
 [ext_resource type="Script" uid="uid://bgwkpaqc5u20r" path="res://script/gate_door.gd" id="6_1fh44"]
 [ext_resource type="PackedScene" uid="uid://c2mkd8gm72cmt" path="res://game assts/kenney_modular-space-kit_1.0/Models/GLB format/cables.glb" id="6_x2fih"]
 [ext_resource type="PackedScene" uid="uid://cnm75qph72kht" path="res://game assts/kenney_modular-space-kit_1.0/Models/GLB format/template-wall.glb" id="7_0yfks"]
+[ext_resource type="PackedScene" uid="uid://bdnouml5p2haw" path="res://game assts/LowPolySciFiStation/SM_Holo_Table.glb" id="8_kjnkg"]
+[ext_resource type="PackedScene" uid="uid://cd08barftlxmh" path="res://game assts/LowPolySciFiStation/SM_Ceiling_Light.glb" id="9_rbvai"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_5h11f"]
 size = Vector3(3.046997, 3.1776123, 7.4971924)
@@ -144,6 +146,15 @@ transform = Transform3D(-4.338748e-08, 0.0036950381, -0.9999932, 8.770524e-08, 0
 
 [node name="template-wall2" parent="template-wall2/template-wall2/template-wall2" unique_id=425262498 instance=ExtResource("7_0yfks")]
 transform = Transform3D(-1.0000001, 1.7492653e-07, 8.77462e-08, 1.7548238e-07, 0.9999932, 0.0036949508, -8.709887e-08, 0.0036949508, -0.9999932, -3.8146973e-06, -9.536743e-07, -11.999999)
+
+[node name="SM_Holo_Table2" parent="." unique_id=1283180769 instance=ExtResource("8_kjnkg")]
+transform = Transform3D(-7.9338015e-08, 0, -1.8150423, 0, 1.9008272, 0, 1.8150423, 0, -7.9338015e-08, 0.35534096, 0, 7.264722)
+
+[node name="SM_Ceiling_Light2" parent="." unique_id=1306921317 instance=ExtResource("9_rbvai")]
+transform = Transform3D(3.3478997, 0, 0, 0, 0.99999994, 0, 1.4210855e-14, 0, 1, 0.06688714, 8.174904, 5.037999)
+
+[node name="SM_Ceiling_Light3" parent="." unique_id=2102986959 instance=ExtResource("9_rbvai")]
+transform = Transform3D(3.3478997, 0, 0, 0, 0.99999994, 0, 1.4210855e-14, 0, 1, 0.06688714, 8.174904, 9.439451)
 
 [editable path="gate-door2"]
 [editable path="gate-door3"]

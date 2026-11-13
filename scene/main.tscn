@@ -1,19 +1,25 @@
 [gd_scene format=3 uid="uid://cru53enig026p"]
 
 [ext_resource type="PackedScene" uid="uid://b76kbbvcmhblu" path="res://scene/airlock.tscn" id="4_of57s"]
+[ext_resource type="Script" uid="uid://31v7kqln840u" path="res://script/InteractableProp.gd" id="6_hybxs"]
 [ext_resource type="PackedScene" uid="uid://bt2ftprck7x2i" path="res://scene/control_center.tscn" id="7_of57s"]
-[ext_resource type="PackedScene" uid="uid://uvg4i3etr7qf" path="res://scene/engine_room.tscn" id="7_p1hux"]
+[ext_resource type="PackedScene" uid="uid://uvg4i3etr7qf" path="res://scene/cockpit.tscn" id="7_p1hux"]
 [ext_resource type="PackedScene" uid="uid://cfv1vrr0iy1qm" path="res://scene/long_corridor.tscn" id="8_b5f6u"]
 [ext_resource type="PackedScene" uid="uid://ccfd2sgxhycop" path="res://scene/reactor.tscn" id="8_jcbur"]
 [ext_resource type="PackedScene" uid="uid://d3o4vhbmdncv5" path="res://scene/corridor.tscn" id="8_of57s"]
+[ext_resource type="Shader" uid="uid://cb5vb2u0mggik" path="res://addons/psx_shader/shaders/psx_screen.gdshader" id="9_b5f6u"]
+[ext_resource type="Script" uid="uid://6s68aq070bub" path="res://HUD.gd" id="9_mswub"]
 [ext_resource type="PackedScene" uid="uid://b5v4lqg0ex5e3" path="res://scene/character.tscn" id="9_smf0o"]
+[ext_resource type="PackedScene" uid="uid://dcod8u5801upf" path="res://scene/Bedroom.tscn" id="10_tqoya"]
+[ext_resource type="PackedScene" uid="uid://dd0cpkelajut3" path="res://scene/Medbay.tscn" id="11_k65ib"]
+[ext_resource type="PackedScene" uid="uid://b3633raka3l3i" path="res://scene/storage.tscn" id="12_wscrc"]
 [ext_resource type="PackedScene" uid="uid://b3x2dbr2mgotk" path="res://game assts/Modular SciFi MegaKit[Standard]/FBX/Props/Prop_Cable_1.fbx" id="23_p8adh"]
 
 [sub_resource type="Environment" id="Environment_of57s"]
-background_mode = 1
-background_color = Color(0.023529412, 0.03137255, 0.05490196, 1)
+background_mode = 2
+background_color = Color(0.20673716, 0.00019646973, 0.6168157, 1)
 ambient_light_source = 2
-ambient_light_color = Color(0.101960786, 0.13333334, 0.2, 1)
+ambient_light_color = Color(0.23552382, 0.07095831, 0.51590395, 1)
 ambient_light_energy = 0.3
 tonemap_mode = 2
 ssao_enabled = true
@@ -27,6 +33,15 @@ fog_enabled = true
 [sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_b5f6u"]
 
 [sub_resource type="Compositor" id="Compositor_tqoya"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5h11f"]
+shader = ExtResource("9_b5f6u")
+shader_parameter/screen_amount = 1.0
+shader_parameter/screen_pixel_size = 3.0
+shader_parameter/screen_color_bits = 5
+shader_parameter/screen_dither = 1.0
+shader_parameter/grain = 0.0
+shader_parameter/vignette = 0.0
 
 [node name="Node3D" type="Node3D" unique_id=153553606]
 
@@ -46,32 +61,88 @@ compositor = SubResource("Compositor_tqoya")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 84.647995, 0.19953442, -0.8649988)
 
 [node name="CharacterBody3D" parent="." unique_id=363426233 instance=ExtResource("9_smf0o")]
-transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, 81.57094, 0.31090927, 1.8360147)
-visible = false
+transform = Transform3D(1.3113416e-07, 0, -1, 0, 1, 0, 1, 0, 1.3113416e-07, 79.96568, 0.06614113, -13.802475)
 
-[node name="engine room" parent="." unique_id=1677956687 instance=ExtResource("7_p1hux")]
+[node name="airlock" parent="." unique_id=1584216327 instance=ExtResource("4_of57s")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 62.041763, 0, -21.37975)
+
+[node name="cockpit" parent="." unique_id=1677956687 instance=ExtResource("7_p1hux")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 81.17729, 0, -68.71623)
-
-[node name="engine room" parent="engine room" unique_id=1032729780 instance=ExtResource("7_p1hux")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -19.135529, 0, 31.336098)
-
-[node name="engine room" parent="engine room/engine room" unique_id=1451761223 instance=ExtResource("7_p1hux")]
-transform = Transform3D(-1, 0, -8.742277e-08, 0, 1, 0, 8.742277e-08, 0, -1, 0.20140839, 0, 38.472458)
-
-[node name="engine room2" parent="engine room/engine room" unique_id=1584216327 instance=ExtResource("4_of57s")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.000385, 0, 0)
-
-[node name="engine room2" parent="engine room/engine room/engine room2" unique_id=786814983 instance=ExtResource("4_of57s")]
-transform = Transform3D(-1, 0, -8.742277e-08, 0, 1, 0, 8.742277e-08, 0, -1, 0.20140839, 0, 38.472458)
 
 [node name="control center" parent="." unique_id=30357416 instance=ExtResource("7_of57s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72.38154, 0, -49.367046)
 
-[node name="engine room2" parent="." unique_id=1523326413 instance=ExtResource("8_of57s")]
+[node name="SM_Wall_Console2" parent="control center" index="18" unique_id=832847846 node_paths=PackedStringArray("target_door")]
+script = ExtResource("6_hybxs")
+prop_type = 2
+target_door = NodePath("../../corridor/gate-door2")
+
+[node name="corridor" parent="." unique_id=1523326413 instance=ExtResource("8_of57s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 81.17729, 0, -44.717068)
+
+[node name="gate-door2" parent="corridor" index="2" unique_id=605238256]
+is_locked = true
 
 [node name="long corridor" parent="." unique_id=247918901 instance=ExtResource("8_b5f6u")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 81.22844, -3.3012695, -22.180662)
 
+[node name="Untitled" parent="long corridor" index="25" unique_id=1426005834 node_paths=PackedStringArray("target_door")]
+prop_type = 4
+target_door = NodePath("../../Reactor/gate-door-window2")
+
 [node name="Prop_Cable_1" parent="." unique_id=1409829783 instance=ExtResource("23_p8adh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 73.75358, -4.0611615, -1.4729314)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1763711625]
+script = ExtResource("9_mswub")
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=411860457]
+material = SubResource("ShaderMaterial_5h11f")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Control" type="Control" parent="CanvasLayer" unique_id=1895673287]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Bedroom" parent="." unique_id=708790100 instance=ExtResource("10_tqoya")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 100.5102, -2.3841858e-06, -37.541634)
+
+[node name="gate-door2" parent="Bedroom" index="5" unique_id=605238256]
+is_locked = true
+
+[node name="SM_Desk_Terminal2" parent="Bedroom" index="10" unique_id=753231112 node_paths=PackedStringArray("target_door")]
+target_door = NodePath("../gate-door2")
+
+[node name="Medbay" parent="." unique_id=991246080 instance=ExtResource("11_k65ib")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 62.041763, -1.4305115e-06, -37.380135)
+
+[node name="storage" parent="." unique_id=1902242964 instance=ExtResource("12_wscrc")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 100.51422, 0, -21.581543)
+
+[editable path="Reactor"]
+[editable path="Reactor/gate-door-window2"]
+[editable path="Reactor/Prop_Fan_Small"]
+[editable path="Reactor/Prop_Fan_Small/Prop_Fan_Small"]
+[editable path="control center"]
+[editable path="corridor"]
+[editable path="corridor/gate-door2"]
+[editable path="corridor/gate-door3"]
+[editable path="corridor/gate-door4"]
+[editable path="corridor/gate-door5"]
+[editable path="long corridor"]
+[editable path="long corridor/gate-door5"]
+[editable path="long corridor/gate-door6"]
+[editable path="long corridor/Untitled"]
+[editable path="Bedroom"]
+[editable path="Bedroom/gate-door2"]

@@ -4,7 +4,6 @@
 [ext_resource type="PackedScene" uid="uid://ba0nppq7r1k5v" path="res://game assts/kenney_modular-space-kit_1.0/Models/GLB format/template-wall-corner.glb" id="2_24gvb"]
 [ext_resource type="PackedScene" uid="uid://cuiungkmnegya" path="res://game assts/kenney_modular-space-kit_1.0/Models/GLB format/stairs.glb" id="3_bqmja"]
 [ext_resource type="PackedScene" uid="uid://com2j5faxdjdx" path="res://game assts/kenney_modular-space-kit_1.0/Models/GLB format/template-floor-detail-a.glb" id="4_cqbry"]
-[ext_resource type="Script" uid="uid://i118fmfbmovy" path="res://fan.gd" id="5_7tacj"]
 [ext_resource type="PackedScene" uid="uid://bri2lktgmimet" path="res://game assts/kenney_modular-space-kit_1.0/Models/GLB format/template-wall-detail-a.glb" id="5_m4xxt"]
 [ext_resource type="PackedScene" uid="uid://cmamvhbv6bbb" path="res://game assts/kenney_modular-space-kit_1.0/Models/GLB format/gate-door-window.glb" id="7_drlow"]
 [ext_resource type="Script" uid="uid://bgwkpaqc5u20r" path="res://script/gate_door.gd" id="8_biss7"]
@@ -12,59 +11,38 @@
 [ext_resource type="PackedScene" uid="uid://tqe28dfhfcdk" path="res://game assts/Modular SciFi MegaKit[Standard]/FBX/Props/Prop_Fan_Small.fbx" id="9_biss7"]
 [ext_resource type="PackedScene" uid="uid://dmsalfyy4od02" path="res://game assts/kenney_modular-space-kit_1.0/Models/GLB format/template-floor.glb" id="10_aiptx"]
 [ext_resource type="PackedScene" uid="uid://cnm75qph72kht" path="res://game assts/kenney_modular-space-kit_1.0/Models/GLB format/template-wall.glb" id="11_7ybns"]
-[ext_resource type="PackedScene" uid="uid://c1ptd8icytefd" path="res://game assts/reactor/reactor.glb" id="12_7ybns"]
+[ext_resource type="PackedScene" uid="uid://dwwoffeurctns" path="res://game assts/LowPolySciFiStation/SM_Reactor_Core.glb" id="14_8akui"]
 [ext_resource type="PackedScene" uid="uid://dhpnxg1qkukb1" path="res://game assts/kenney_modular-space-kit_1.0/Models/GLB format/template-wall-stairs.glb" id="14_ulbb4"]
 [ext_resource type="PackedScene" uid="uid://c0cru61iav202" path="res://game assts/kenney_modular-space-kit_1.0/Models/GLB format/template-floor-layer-raised.glb" id="15_8akui"]
+[ext_resource type="PackedScene" uid="uid://cd08barftlxmh" path="res://game assts/LowPolySciFiStation/SM_Ceiling_Light.glb" id="15_nbid5"]
+[ext_resource type="PackedScene" uid="uid://c16vbbvgb13m4" path="res://game assts/LowPolySciFiStation/SM_Power_Conduit.glb" id="16_1bu0v"]
+[ext_resource type="PackedScene" uid="uid://bto6wubqdsblh" path="res://game assts/LowPolySciFiStation/SM_Stasis_Pod.glb" id="17_wipob"]
+[ext_resource type="PackedScene" uid="uid://cnu8101fjirlc" path="res://game assts/LowPolySciFiStation/SM_Stool.glb" id="18_k3ua6"]
+[ext_resource type="PackedScene" uid="uid://cbd8ur2ece7ma" path="res://game assts/LowPolySciFiStation/SM_Pillar.glb" id="19_utpse"]
+[ext_resource type="PackedScene" uid="uid://v2itgb1hctq7" path="res://game assts/LowPolySciFiStation/SM_Generator.glb" id="20_r4trt"]
+[ext_resource type="PackedScene" uid="uid://chyqf27blfbcv" path="res://game assts/LowPolySciFiStation/SM_Fuse_Box.glb" id="21_uuexk"]
+[ext_resource type="PackedScene" uid="uid://5oi6lmmwgjqw" path="res://game assts/LowPolySciFiStation/SM_Fuel_Tank.glb" id="22_0jf1i"]
+[ext_resource type="PackedScene" uid="uid://dv7riskn2cfek" path="res://game assts/LowPolySciFiStation/SM_Fuel_Barrel.glb" id="23_1sr4f"]
+[ext_resource type="PackedScene" uid="uid://c15hkvmnmutbe" path="res://game assts/LowPolySciFiStation/SM_ForceField_Cell.glb" id="24_8w0tl"]
+[ext_resource type="PackedScene" uid="uid://c6c427s6hbem3" path="res://game assts/LowPolySciFiStation/SM_Floor_Vent.glb" id="25_330fq"]
+[ext_resource type="PackedScene" uid="uid://bv2dhw48mncgp" path="res://game assts/LowPolySciFiStation/SM_Floor_Panel_Open.glb" id="26_d44u3"]
+[ext_resource type="PackedScene" uid="uid://oreoeaw8ldki" path="res://game assts/LowPolySciFiStation/SM_Floor_LightStrip.glb" id="27_2bu0q"]
+[ext_resource type="PackedScene" uid="uid://cnqbsrv0l8ii4" path="res://game assts/LowPolySciFiStation/SM_Floor_Hazard_Edge.glb" id="28_8uup7"]
+[ext_resource type="PackedScene" uid="uid://dvt4bvy4g2v0e" path="res://game assts/LowPolySciFiStation/SM_Floor_Grate_Lit.glb" id="29_bcvis"]
+[ext_resource type="PackedScene" uid="uid://bssr6y7vt7fky" path="res://game assts/LowPolySciFiStation/SM_Floor_Corridor_Arrow.glb" id="30_1mggs"]
+[ext_resource type="PackedScene" uid="uid://bw8anmippj70o" path="res://game assts/LowPolySciFiStation/SM_Fire_Extinguisher.glb" id="31_bi6k8"]
+[ext_resource type="PackedScene" uid="uid://chxgm8xxdsklh" path="res://game assts/LowPolySciFiStation/SM_Eng_Control_Panel.glb" id="32_0e52c"]
+[ext_resource type="PackedScene" uid="uid://n7thy11eakmm" path="res://game assts/LowPolySciFiStation/SM_Desk_Terminal.glb" id="33_ydgcj"]
+[ext_resource type="PackedScene" uid="uid://ckoeyjcn3ic8c" path="res://game assts/LowPolySciFiStation/SM_Coolant_Tank.glb" id="34_w168h"]
+[ext_resource type="PackedScene" uid="uid://265ows55qahi" path="res://game assts/LowPolySciFiStation/SM_Console_Standing.glb" id="35_3dvcp"]
+[ext_resource type="PackedScene" uid="uid://5pqdg4h40tjs" path="res://game assts/LowPolySciFiStation/SM_Console_Curved.glb" id="36_y55pf"]
+[ext_resource type="PackedScene" uid="uid://did3enh23mt4x" path="res://game assts/LowPolySciFiStation/SM_Comm_Panel.glb" id="37_1eqtr"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_h5x8s"]
 size = Vector3(3.6173096, 1, 7.502075)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_7jcb3"]
 size = Vector3(3.046997, 3.1776123, 7.4971924)
-
-[sub_resource type="Animation" id="Animation_8ktnw"]
-resource_name = "Particlemove"
-length = 2.4
-loop_mode = 2
-tracks/0/type = "position_3d"
-tracks/0/imported = true
-tracks/0/enabled = true
-tracks/0/path = NodePath("Quadsphere")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = PackedFloat32Array(0, 1, -0.19811241, 2.6027436, 0, 0.13333334, 1, -0.19811241, 2.6011465, 0, 0.16666667, 1, -0.19811241, 2.5999157, 0, 0.2, 1, -0.19811241, 2.598353, 0, 0.23333333, 1, -0.19811241, 2.5963995, 0, 0.26666668, 1, -0.19811241, 2.5941541, 0, 0.3, 1, -0.19811241, 2.591632, 0, 0.33333334, 1, -0.19811241, 2.5888476, 0, 0.36666667, 1, -0.19811241, 2.5858166, 0, 0.4, 1, -0.19811241, 2.5825543, 0, 0.43333334, 1, -0.19811241, 2.5790274, 0, 0.46666667, 1, -0.19811241, 2.5753093, 0, 0.5, 1, -0.19811241, 2.5714147, 0, 0.53333336, 1, -0.19811241, 2.5673594, 0, 0.56666666, 1, -0.19811241, 2.5631578, 0, 0.6, 1, -0.19811241, 2.5588253, 0, 0.6333333, 1, -0.19811241, 2.5543542, 0, 0.6666667, 1, -0.19811241, 2.5497928, 0, 0.7, 1, -0.19811241, 2.5451558, 0, 0.76666665, 1, -0.19811241, 2.535715, 0, 0.9, 1, -0.19811241, 2.5166304, 0, 0.93333334, 1, -0.19811241, 2.5119202, 0, 0.96666664, 1, -0.19811241, 2.5072653, 0, 1, 1, -0.19811241, 2.502681, 0, 1.0333333, 1, -0.19811241, 2.49821, 0, 1.0666667, 1, -0.19811241, 2.49385, 0, 1.1, 1, -0.19811241, 2.4896154, 0, 1.1333333, 1, -0.19811241, 2.4855223, 0, 1.1666666, 1, -0.19811241, 2.481585, 0, 1.2, 1, -0.19811241, 2.477819, 0, 1.2333333, 1, -0.19811241, 2.4742923, 0, 1.2666667, 1, -0.19811241, 2.4709768, 0, 1.3, 1, -0.19811241, 2.467888, 0, 1.3333334, 1, -0.19811241, 2.465041, 0, 1.3666667, 1, -0.19811241, 2.4624507, 0, 1.4, 1, -0.19811241, 2.4601324, 0, 1.4333333, 1, -0.19811241, 2.4581792, 0, 1.4666667, 1, -0.19811241, 2.456538, 0, 1.5, 1, -0.19811241, 2.455224, 0, 1.5666667, 1, -0.19811241, 2.4536388, 0, 1.6333333, 1, -0.19811241, 2.4542997, 0, 1.6666666, 1, -0.19811241, 2.456546, 0, 1.7, 1, -0.19811241, 2.4600248, 0, 1.7333333, 1, -0.19811241, 2.4646235, 0, 1.7666667, 1, -0.19811241, 2.47023, 0, 1.8, 1, -0.19811241, 2.476733, 0, 1.8333334, 1, -0.19811241, 2.484169, 0, 1.8666667, 1, -0.19811241, 2.4922025, 0, 1.9, 1, -0.19811241, 2.5007215, 0, 1.9333333, 1, -0.19811241, 2.5096138, 0, 1.9666667, 1, -0.19811241, 2.5187676, 0, 2.0333333, 1, -0.19811241, 2.5373735, 0, 2.0666666, 1, -0.19811241, 2.5465271, 0, 2.1, 1, -0.19811241, 2.5554194, 0, 2.1333334, 1, -0.19811241, 2.5639386, 0, 2.1666667, 1, -0.19811241, 2.5719721, 0, 2.2, 1, -0.19811241, 2.5794082, 0, 2.2333333, 1, -0.19811241, 2.585911, 0, 2.2666667, 1, -0.19811241, 2.5915177, 0, 2.3, 1, -0.19811241, 2.5961163, 0, 2.3333333, 1, -0.19811241, 2.5995948, 0, 2.3666666, 1, -0.19811241, 2.6018412, 0, 2.4, 1, -0.19811241, 2.6027436, 0)
-tracks/1/type = "position_3d"
-tracks/1/imported = true
-tracks/1/enabled = true
-tracks/1/path = NodePath("Quadsphere_001")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = PackedFloat32Array(0, 1, -0.011393815, 1.6326065, 0)
-
-[sub_resource type="Animation" id="Animation_vkx08"]
-resource_name = "Quadsphere_001Action"
-length = 2.4
-loop_mode = 2
-tracks/0/type = "position_3d"
-tracks/0/imported = true
-tracks/0/enabled = true
-tracks/0/path = NodePath("Quadsphere_001")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = PackedFloat32Array(0, 1, -0.011393815, 1.6326065, 0, 0.033333335, 1, -0.011393815, 1.6326065, 0, 0.06666667, 1, -0.010388596, 1.6326065, 0, 0.1, 1, -0.0077339043, 1.6326065, 0, 0.13333334, 1, -0.0033246484, 1.6326065, 0, 0.16666667, 1, 0.0026746797, 1.6326065, 0, 0.2, 1, 0.010099589, 1.6326065, 0, 0.23333333, 1, 0.019032331, 1.6326065, 0, 0.26666668, 1, 0.028952016, 1.6326065, 0, 0.3, 1, 0.03969415, 1.6326065, 0, 0.33333334, 1, 0.05109424, 1.6326065, 0, 0.36666667, 1, 0.062987804, 1.6326065, 0, 0.4, 1, 0.07521034, 1.6326065, 0, 0.46666667, 1, 0.09981994, 1.6326065, 0, 0.5, 1, 0.11179575, 1.6326065, 0, 0.53333336, 1, 0.12333292, 1.6326065, 0, 0.56666666, 1, 0.13426693, 1.6326065, 0, 0.6, 1, 0.14443336, 1.6326065, 0, 0.6333333, 1, 0.15336609, 1.6326065, 0, 0.6666667, 1, 0.1610926, 1.6326065, 0, 0.7, 1, 0.16744831, 1.6326065, 0, 0.73333335, 1, 0.17226878, 1.6326065, 0, 0.76666665, 1, 0.17538951, 1.6326065, 0, 0.8, 1, 0.17664605, 1.6326065, 0, 0.8666667, 1, 0.17562163, 1.6326065, 0, 0.9, 1, 0.17445715, 1.6326065, 0, 0.93333334, 1, 0.17288134, 1.6326065, 0, 0.96666664, 1, 0.17091182, 1.6326065, 0, 1, 1, 0.16856623, 1.6326065, 0, 1.0333333, 1, 0.16577989, 1.6326065, 0, 1.0666667, 1, 0.16266449, 1.6326065, 0, 1.1, 1, 0.15923767, 1.6326065, 0, 1.1333333, 1, 0.15551703, 1.6326065, 0, 1.1666666, 1, 0.15152021, 1.6326065, 0, 1.2, 1, 0.14726482, 1.6326065, 0, 1.2333333, 1, 0.14271562, 1.6326065, 0, 1.2666667, 1, 0.13795489, 1.6326065, 0, 1.3, 1, 0.13300025, 1.6326065, 0, 1.3333334, 1, 0.1278693, 1.6326065, 0, 1.3666667, 1, 0.12257971, 1.6326065, 0, 1.4, 1, 0.11714907, 1.6326065, 0, 1.4333333, 1, 0.111571535, 1.6326065, 0, 1.4666667, 1, 0.10589997, 1.6326065, 0, 1.5, 1, 0.10015202, 1.6326065, 0, 1.7, 1, 0.06510021, 1.6326065, 0, 1.7333333, 1, 0.05935227, 1.6326065, 0, 1.7666667, 1, 0.053680718, 1.6326065, 0, 1.8, 1, 0.048103184, 1.6326065, 0, 1.8333334, 1, 0.042672556, 1.6326065, 0, 1.8666667, 1, 0.03738295, 1.6326065, 0, 1.9, 1, 0.032252017, 1.6326065, 0, 1.9333333, 1, 0.027297383, 1.6326065, 0, 1.9666667, 1, 0.02253663, 1.6326065, 0, 2, 1, 0.01798743, 1.6326065, 0, 2.0333333, 1, 0.013732044, 1.6326065, 0, 2.0666666, 1, 0.009735191, 1.6326065, 0, 2.1, 1, 0.0060145482, 1.6326065, 0, 2.1333334, 1, 0.0025877154, 1.6326065, 0, 2.1666667, 1, -0.0005276526, 1.6326065, 0, 2.2, 1, -0.0033139586, 1.6326065, 0, 2.2333333, 1, -0.005659575, 1.6326065, 0, 2.2666667, 1, -0.0076291068, 1.6326065, 0, 2.3, 1, -0.009204909, 1.6326065, 0, 2.3333333, 1, -0.01036938, 1.6326065, 0, 2.4, 1, -0.011393815, 1.6326065, 0)
-tracks/1/type = "position_3d"
-tracks/1/imported = true
-tracks/1/enabled = true
-tracks/1/path = NodePath("Quadsphere")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = PackedFloat32Array(0, 1, -0.19811241, 2.6027436, 0)
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_ibml2"]
-_data = {
-&"Particlemove": SubResource("Animation_8ktnw"),
-&"Quadsphere_001Action": SubResource("Animation_vkx08")
-}
 
 [node name="Reactor" type="Node3D" unique_id=1515105779]
 
@@ -200,6 +178,7 @@ transform = Transform3D(-1, 0, 8.742277e-08, 0, 1, 0, -8.742277e-08, 0, -1, -2.3
 [node name="gate-door-window2" parent="." unique_id=1502345898 instance=ExtResource("7_drlow")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3659446, -0.25539428, -10.469168)
 script = ExtResource("8_biss7")
+is_locked = true
 
 [node name="TriggerZone" type="Area3D" parent="gate-door-window2" unique_id=1057096157]
 
@@ -207,19 +186,8 @@ script = ExtResource("8_biss7")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.07818604, 2.2306223, 0.13446045)
 shape = SubResource("BoxShape3D_7jcb3")
 
-[node name="reactor" parent="." unique_id=823866210 instance=ExtResource("12_7ybns")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3628893, -1.0960865, 7.0638833)
-script = ExtResource("5_7tacj")
-
-[node name="AnimationPlayer" parent="reactor" index="3" unique_id=36077392]
-autoplay = &"Particlemove"
-
-[node name="AnimationPlayer2" type="AnimationPlayer" parent="reactor" unique_id=365029692]
-libraries/ = SubResource("AnimationLibrary_ibml2")
-autoplay = &"Quadsphere_001Action"
-
 [node name="Prop_Fan_Small" parent="." unique_id=1398318113 instance=ExtResource("9_biss7")]
-transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 6.1449904, -1.3013364, 7.1508307)
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 6.1449904, 0.65489495, 7.1508307)
 
 [node name="Skeleton3D" parent="Prop_Fan_Small/Fan_Armature" parent_id_path=PackedInt32Array(1398318113, 975812816) index="0" unique_id=1787815583]
 bones/1/rotation = Quaternion(0, 0, 0, 1)
@@ -246,8 +214,131 @@ transform = Transform3D(7.54979e-08, -7.578495e-15, -1, -6.3573026e-08, -1, 2.77
 
 [node name="template-floor-layer-raised2" parent="." unique_id=535926308 instance=ExtResource("15_8akui")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.4666982, -4.2896466, 7.317614)
+visible = false
+
+[node name="SM_Reactor_Core2" parent="." unique_id=666196592 instance=ExtResource("14_8akui")]
+transform = Transform3D(1.9678878, 0, 0, 0, 2.028337, 0, 0, 0, 1.9678878, -3.4102244, -4.2961335, 7.243848)
+
+[node name="SM_Ceiling_Light2" parent="." unique_id=1306921317 instance=ExtResource("15_nbid5")]
+transform = Transform3D(3.3478997, 0, 0, 0, 0.99999994, 0, 1.4210855e-14, 0, 1, 0.06688714, 3.849587, 7.2349358)
+
+[node name="SM_Ceiling_Light4" parent="." unique_id=1563585679 instance=ExtResource("15_nbid5")]
+transform = Transform3D(3.3478997, 0, 0, 0, 0.99999994, 0, 1.4210855e-14, 0, 1, 0.06688714, 3.849587, 1.4003811)
+
+[node name="SM_Ceiling_Light8" parent="." unique_id=1178019753 instance=ExtResource("15_nbid5")]
+transform = Transform3D(-1.4634134e-07, 0, 1, 0, 0.99999994, 0, -3.3478997, 0, -4.371139e-08, -3.3284888, 3.849587, -7.029091)
+
+[node name="SM_Ceiling_Light3" parent="." unique_id=1098360509 instance=ExtResource("15_nbid5")]
+transform = Transform3D(3.3478997, 0, 0, 0, 0.99999994, 0, 1.4210855e-14, 0, 1, 0.06688714, 3.849587, 13.213764)
+
+[node name="SM_Ceiling_Light5" parent="." unique_id=482536537 instance=ExtResource("15_nbid5")]
+transform = Transform3D(3.3478997, 0, 0, 0, 0.99999994, 0, 1.4210855e-14, 0, 1, -6.8037453, 3.849587, 7.2349358)
+
+[node name="SM_Ceiling_Light6" parent="." unique_id=162474339 instance=ExtResource("15_nbid5")]
+transform = Transform3D(3.3478997, 0, 0, 0, 0.99999994, 0, 1.4210855e-14, 0, 1, -6.8037453, 3.849587, 1.4003811)
+
+[node name="SM_Ceiling_Light7" parent="." unique_id=1197316870 instance=ExtResource("15_nbid5")]
+transform = Transform3D(3.3478997, 0, 0, 0, 0.99999994, 0, 1.4210855e-14, 0, 1, -6.8037453, 3.849587, 13.213764)
+
+[node name="SM_Power_Conduit2" parent="." unique_id=1908306938 instance=ExtResource("16_1bu0v")]
+transform = Transform3D(1.77, 0, 0, 0, 1.77, 0, 0, 0, 1.77, -1.371212, -4.289646, 15.443098)
+
+[node name="SM_Stasis_Pod2" parent="." unique_id=823947783 instance=ExtResource("17_wipob")]
+transform = Transform3D(1.77, 0, 0, 0, 1.77, 0, 0, 0, 1.77, 2.192196, -4.289646, 14.737137)
+
+[node name="SM_Stool2" parent="." unique_id=475321768 instance=ExtResource("18_k3ua6")]
+transform = Transform3D(1.77, 0, 0, 0, 1.77, 0, 0, 0, 1.77, -10.759569, -4.289646, 2.815481)
+
+[node name="SM_Pillar2" parent="." unique_id=2119453270 instance=ExtResource("19_utpse")]
+transform = Transform3D(1.77, 0, 0, 0, 2.697317, 0, 0, 0, 1.77, -1.0044063, -4.289646, 4.9355807)
+
+[node name="SM_Pillar3" parent="." unique_id=901945503 instance=ExtResource("19_utpse")]
+transform = Transform3D(1.77, 0, 0, 0, 2.697317, 0, 0, 0, 1.77, -5.5865207, -4.289646, 4.9355807)
+
+[node name="SM_Pillar4" parent="." unique_id=588136148 instance=ExtResource("19_utpse")]
+transform = Transform3D(1.77, 0, 0, 0, 2.697317, 0, 0, 0, 1.77, -1.0044063, -4.289646, 9.4639635)
+
+[node name="SM_Pillar5" parent="." unique_id=343411143 instance=ExtResource("19_utpse")]
+transform = Transform3D(1.77, 0, 0, 0, 2.697317, 0, 0, 0, 1.77, -5.5865207, -4.289646, 9.4639635)
+
+[node name="SM_Generator2" parent="." unique_id=778512741 instance=ExtResource("20_r4trt")]
+transform = Transform3D(-7.736916e-08, 0, -1.77, 0, 1.77, 0, 1.77, 0, -7.736916e-08, 3.9957433, -4.289646, 11.055031)
+
+[node name="SM_Fuse_Box2" parent="." unique_id=531945257 instance=ExtResource("21_uuexk")]
+transform = Transform3D(1.77, 0, 0, 0, 1.77, 0, 0, 0, 1.77, 1.3834672, -1.9866967, -2.3583364)
+
+[node name="SM_Fuel_Tank2" parent="." unique_id=338641359 instance=ExtResource("22_0jf1i")]
+transform = Transform3D(-1.77, 0, -1.5473832e-07, 0, 1.77, 0, 1.5473832e-07, 0, -1.77, -7.125908, -4.2896466, 14.804578)
+
+[node name="SM_Fuel_Barrel2" parent="." unique_id=245826843 instance=ExtResource("23_1sr4f")]
+transform = Transform3D(1.77, 0, 0, 0, 1.77, 0, 0, 0, 1.77, 5.1271133, -4.2896466, 7.379608)
+
+[node name="SM_Fuel_Barrel3" parent="." unique_id=1412281350 instance=ExtResource("23_1sr4f")]
+transform = Transform3D(1.77, 0, 0, 0, 1.77, 0, 0, 0, 1.77, 5.1271133, -4.2896466, 5.7104235)
+
+[node name="SM_ForceField_Cell2" parent="." unique_id=1453031726 instance=ExtResource("24_8w0tl")]
+transform = Transform3D(-7.736916e-08, 0, 1.77, 0, 1.77, 0, -1.77, 0, -7.736916e-08, -12.205009, -4.2896466, 9.76628)
+
+[node name="SM_Floor_Vent2" parent="." unique_id=607796224 instance=ExtResource("25_330fq")]
+transform = Transform3D(1.77, 0, 0, 0, 1.77, 0, 0, 0, 1.77, -7.3967676, -4.0496464, 3.1778963)
+
+[node name="SM_Floor_Vent3" parent="." unique_id=561648782 instance=ExtResource("25_330fq")]
+transform = Transform3D(1.77, 0, 0, 0, 1.77, 0, 0, 0, 1.77, 0.668911, -4.0496464, 3.1778963)
+
+[node name="SM_Floor_Vent4" parent="." unique_id=1069859821 instance=ExtResource("25_330fq")]
+transform = Transform3D(1.77, 0, 0, 0, 1.77, 0, 0, 0, 1.77, -7.3967676, -4.0496464, 11.165794)
+
+[node name="SM_Floor_Vent5" parent="." unique_id=1288524415 instance=ExtResource("25_330fq")]
+transform = Transform3D(1.77, 0, 0, 0, 1.77, 0, 0, 0, 1.77, 0.668911, -4.0496464, 11.165794)
+
+[node name="SM_Floor_Panel_Open2" parent="." unique_id=1311915262 instance=ExtResource("26_d44u3")]
+transform = Transform3D(1.77, 0, 0, 0, 1.77, 0, 0, 0, 1.77, 0.6754925, -3.8998196, 7.0597253)
+
+[node name="SM_Floor_Panel_Open3" parent="." unique_id=1778674059 instance=ExtResource("26_d44u3")]
+transform = Transform3D(1.77, 0, 0, 0, 1.77, 0, 0, 0, 1.77, -3.228657, -3.8998196, 11.49337)
+
+[node name="SM_Floor_LightStrip2" parent="." unique_id=787399592 instance=ExtResource("27_2bu0q")]
+transform = Transform3D(-7.736916e-08, 0, 1.77, 0, 1.77, 0, -1.77, 0, -7.736916e-08, -7.41512, -4.0496473, -0.6531291)
+
+[node name="SM_Floor_LightStrip3" parent="." unique_id=195315864 instance=ExtResource("27_2bu0q")]
+transform = Transform3D(-7.736916e-08, 0, 1.77, 0, 1.77, 0, -1.77, 0, -7.736916e-08, 0.6120758, -4.0496473, -0.6531291)
+
+[node name="SM_Floor_Hazard_Edge2" parent="." unique_id=2077145928 instance=ExtResource("28_8uup7")]
+transform = Transform3D(1.77, 0, 0, 0, 1.77, 0, 0, 0, 1.77, -3.326858, -4.0496464, -4.047061)
+
+[node name="SM_Floor_Grate_Lit2" parent="." unique_id=1607139935 instance=ExtResource("29_bcvis")]
+transform = Transform3D(1.77, 0, 0, 0, 1.77, 0, 0, 0, 1.77, -3.355194, -4.0496464, 3.0947824)
+
+[node name="SM_Floor_Grate_Lit3" parent="." unique_id=422128470 instance=ExtResource("29_bcvis")]
+transform = Transform3D(1.77, 0, 0, 0, 1.77, 0, 0, 0, 1.77, -7.293416, -4.0496464, 7.177446)
+
+[node name="SM_Floor_Corridor_Arrow2" parent="." unique_id=1177851215 instance=ExtResource("30_1mggs")]
+transform = Transform3D(1.77, 0, 0, 0, 1.77, 0, 0, 0, 1.77, -3.436592, -4.0496464, -0.45429814)
+
+[node name="SM_Fire_Extinguisher2" parent="." unique_id=1079255925 instance=ExtResource("31_bi6k8")]
+transform = Transform3D(1.77, 0, 0, 0, 1.77, 0, 0, 0, 1.77, 5.0875154, -4.2896466, 0.924404)
+
+[node name="SM_Eng_Control_Panel2" parent="." unique_id=437742586 instance=ExtResource("32_0e52c")]
+transform = Transform3D(1.77, 0, 0, 0, 1.77, 0, 0, 0, 1.77, -7.278055, -4.2896466, -1.400275)
+
+[node name="SM_Eng_Control_Panel3" parent="." unique_id=1128251704 instance=ExtResource("32_0e52c")]
+transform = Transform3D(-7.736916e-08, 0, 1.77, 0, 1.77, 0, -1.77, 0, -7.736916e-08, -12.34618, -4.2896466, 3.1291974)
+
+[node name="SM_Desk_Terminal2" parent="." unique_id=753231112 instance=ExtResource("33_ydgcj")]
+transform = Transform3D(-7.736916e-08, 0, -1.77, 0, 1.77, 0, 1.77, 0, -7.736916e-08, 4.9974165, -4.2896466, 3.1012053)
+
+[node name="SM_Coolant_Tank2" parent="." unique_id=2144055743 instance=ExtResource("34_w168h")]
+transform = Transform3D(-1.2515789, 0, 1.2515789, 0, 1.77, 0, -1.2515789, 0, -1.2515789, -11.051263, -4.2896466, 13.995993)
+
+[node name="SM_Console_Standing2" parent="." unique_id=1128146190 instance=ExtResource("35_3dvcp")]
+transform = Transform3D(1.77, 0, 0, 0, 1.77, 0, 0, 0, 1.77, -1.6815994, -4.2896466, -2.1753387)
+
+[node name="SM_Console_Curved2" parent="." unique_id=1178638639 instance=ExtResource("36_y55pf")]
+transform = Transform3D(1.4383522, 0, 1.4383525, 0, 2.0341377, 0, -1.4383525, 0, 1.4383522, -11.047784, -4.2896466, -0.23222113)
+
+[node name="SM_Comm_Panel2" parent="." unique_id=602390428 instance=ExtResource("37_1eqtr")]
+transform = Transform3D(1.77, 0, 0, 0, 1.77, 0, 0, 0, 1.77, -0.44889164, -1.7499778, -2.4821968)
 
 [editable path="gate-door-window2"]
-[editable path="reactor"]
 [editable path="Prop_Fan_Small"]
 [editable path="Prop_Fan_Small/Prop_Fan_Small"]

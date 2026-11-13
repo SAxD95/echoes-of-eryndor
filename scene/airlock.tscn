@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://cnm75qph72kht" path="res://game assts/kenney_modular-space-kit_1.0/Models/GLB format/template-wall.glb" id="4_83l3x"]
 [ext_resource type="PackedScene" uid="uid://d1d17tnvrolqe" path="res://game assts/kenney_modular-space-kit_1.0/Models/GLB format/gate-door.glb" id="5_sb171"]
 [ext_resource type="Script" uid="uid://bgwkpaqc5u20r" path="res://script/gate_door.gd" id="6_dtrsj"]
+[ext_resource type="PackedScene" uid="uid://cd08barftlxmh" path="res://game assts/LowPolySciFiStation/SM_Ceiling_Light.glb" id="7_rocal"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_5h11f"]
 size = Vector3(3.046997, 3.1776123, 7.4971924)
@@ -106,5 +107,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.7207105, 0)
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="gate-door2/TriggerZone" unique_id=638348813]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.07818604, 2.2306223, 0.13446045)
 shape = SubResource("BoxShape3D_5h11f")
+
+[node name="SM_Ceiling_Light2" parent="." unique_id=1306921317 instance=ExtResource("7_rocal")]
+transform = Transform3D(3.3478997, 0, 0, 0, 0.99999994, 0, 1.4210855e-14, 0, 1, 0.06688714, 8.174904, 5.037999)
+
+[node name="SM_Ceiling_Light3" parent="." unique_id=827425943 instance=ExtResource("7_rocal")]
+transform = Transform3D(3.3478997, 0, 0, 0, 0.99999994, 0, 1.4210855e-14, 0, 1, 0.06688714, 8.174904, 9.439451)
 
 [editable path="gate-door2"]
